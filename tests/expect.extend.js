@@ -34,4 +34,25 @@ expect.extend({
       message: () => "",
     };
   },
+  /**
+   * @param {any[]} actual
+   * @param {any[]} expected
+   */
+  toHaveSameElements(actual, expected) {
+    try {
+      assert(actual.length === expected.length);
+      for (let i = 0; i < actual.length; i++) {
+        assert(actual[i] === expected[i]);
+      }
+    } catch (err) {
+      return {
+        pass: false,
+        message: () => err,
+      };
+    }
+    return {
+      pass: true,
+      message: () => "",
+    };
+  },
 });

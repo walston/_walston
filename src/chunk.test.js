@@ -1,6 +1,6 @@
 const chunk = require("./chunk");
 
-describe("Chunk", () => {
+describe("chunk.js", () => {
   test("basic implementation with default chunk size", () => {
     const result = chunk("abcdefg".split(""));
     const expected = [["a"], ["b"], ["c"], ["d"], ["e"], ["f"], ["g"]];

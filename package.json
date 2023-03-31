@@ -1,0 +1,28 @@
+{
+  "name": "lodash-walston",
+  "version": "0.0.0",
+  "description": "gonna work through lodash with a mentee, function by function.",
+  "main": "null",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walston/_walston.git"
+  },
+  "keywords": [
+    "practice",
+    "learning",
+    "exploration"
+  ],
+  "author": "walston",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walston/_walston/issues"
+  },
+  "homepage": "https://github.com/walston/_walston#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "jest": "^29.5.0"
+  }
+}

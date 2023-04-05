@@ -4,13 +4,13 @@ describe("chunk.js", () => {
   test("basic implementation with default chunk size", () => {
     const result = chunk("abcdefg".split(""));
     const expected = [["a"], ["b"], ["c"], ["d"], ["e"], ["f"], ["g"]];
-    expect(result).toBeDeeplyEqualTo(expected);
+    expect(result).toEqual(expected);
   });
 
   test("basic implementation with chunk size", () => {
     const result = chunk("abcdefg".split(""), 3);
     const expected = [["a", "b", "c"], ["d", "e", "f"], ["g"]];
-    expect(result).toBeDeeplyEqualTo(expected);
+    expect(result).toEqual(expected);
   });
 
   test("Doesn't accept invalid inputs", () => {
